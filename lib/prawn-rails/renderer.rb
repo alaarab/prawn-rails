@@ -4,7 +4,7 @@ module PrawnRails
   class Renderer
 
     ### WARNING: BE VERY CAREFUL IF EDITING THIS METHOD
-    def self.call(template)
+    def self.call(template, source)
       %{
         @filename ||= "\#{controller.action_name}.pdf"
 
